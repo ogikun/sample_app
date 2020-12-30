@@ -38,7 +38,8 @@ header .headline{
 nav{
   width: 880px;
   margin: 0 auto;
-  border-top: solid 0.7px #000000;
+  border-top: solid 0.7px #000;
+  border-bottom: solid 0.7px #000;
 }
 
 .nav-list{
@@ -47,7 +48,7 @@ nav{
   margin: 0 auto;
 }
 
-nav-list-item{
+.nav-list-item{
   list-style: none;
   display: inline-block;
   margin: 0 20px;
@@ -78,10 +79,18 @@ main{
 }
 
 .list-body{
+  display: block;
   color: gray;
   font-size: 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: elipsis;
 }
 
 .list-title{
-  font-size:18px;
+  display: block;
+  font-size: 18px;
+  overflow: hidden;
+  white-space:nowrap;
+  text-overflow: elipsis;
 }
